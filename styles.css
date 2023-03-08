@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
 }
 
 body {
@@ -19,12 +20,16 @@ header {
   flex-direction: column;
   width: 100%;
   gap: 24px;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 26px;
 }
 
 header,
 main {
   background: linear-gradient(90deg, #fd8900 0%, #ffbb6b 100%);
-  padding: 20px;
 }
 
 .welcome {
@@ -64,13 +69,16 @@ main {
 main {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  padding: 0 20px 20px 20px;
 }
-
+main h1 {
+  margin-bottom: 6px;
+}
 main ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 main ul li {
@@ -79,6 +87,10 @@ main ul li {
   border-radius: 10px;
   align-items: center;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+main h2 {
+  margin-bottom: 8px;
 }
 
 main p {
@@ -100,16 +112,30 @@ main .container-sweet {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
 }
 
 main .container-sweet img {
   width: 100%;
+  border: 1px solid #393939;
+  border-radius: 10px 10px 0 0;
+}
+
+main .on-sale img {
+  border-radius: 10px;
+  border: 1px solid #393939;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+main .on-sale {
+  margin-bottom: 8px;
 }
 
 footer {
   width: 100%;
   background: #fafafa;
-  border-radius: 10px 10px 0 0;
+  border: 1px solid #393939;
 }
 
 footer nav ul {
